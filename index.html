@@ -1,23 +1,65 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="home">
+    <title>NHS EPS</title>
 
-  <h1 class="page-heading">Posts</h1>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <link href="css/cover.css" rel="stylesheet">
+  </head>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <body>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <div class="site-wrapper">
 
-</div>
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">NHS EPS</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="/dos-api">Home</a>
+                <a class="nav-link" href="/dos-api">EPS DoS API</a>
+                <a class="nav-link" href="/dmd-api">DM+D API</a>
+                <a class="nav-link" href="https://developer.nhs.uk/library/systems/electronic-prescription-service-eps/">EPS Specs</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">NHS EPS Code Repository</h1>
+            <p class="lead">Welcome to the NHS Electronic Prescription Service Code Repository</p>
+            <p class="lead">
+              <img href="images/NHSlogoRGBgif.gif" />
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>The Electronic Prescription Service is provided by <a href="https://digital.nhs.uk/Electronic-Prescription-Service">NHS Digital</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
